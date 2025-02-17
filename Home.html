@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume By Uyoon Alam</title>
+    <link rel="stylesheet" href="Resume.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <a href="profile.png" class="image">
+            <img src="profile.png" alt="Image not found" class="image">
+        </a>
+
+        <div class="personal-info-box">
+            <button class="toggle-button" onclick="toggleSection('openPersonalInfo')">Personal Information</button>
+            <div id="openPersonalInfo" style="display:none;">
+                <ul>
+                    <li><strong>Full Name:</strong> Uyoon Alam</li>
+                    <li><strong>Date of Birth:</strong> July 17, 2006</li>
+                    <li><strong>Age:</strong> 18</li>
+                    <li><strong>Email:</strong> uyoon@gmail.com</li>
+                    <li><strong>Phone Number:</strong> 0325-2285440</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="educational-info-box">
+            <button class="toggle-button" onclick="toggleSection('openEducationalInfo')">Educational Information</button>
+            <div id="openEducationalInfo" style="display:none;">
+                <ul>
+                    <li><a href="MatricStudyInfo.html" class="no_underline">Matriculation: Habib Public School (2022)</a></li>
+                    <li><a href="IntermediateStudyInfo.html" class="no_underline">Intermediate: SM Arts & Commerce College (2024)</a></li>
+                    <li><a href="GIAICStudyInfo.html" class="no_underline">Part of AI Development Program at GIAIC (Ongoing)</a></li>
+                    <li><a href="IqsfStudyInfo.html" class="no_underline">Studying Chartered Accountancy (PRC) at IQ School of Finance (Ongoing)</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="skills-box">
+            <button class="toggle-button" onclick="toggleSection('openSkillsInfo')">Skills</button>
+            <div id="openSkillsInfo" style="display:none;">
+                <ul>
+                    <li>Web Development</li>
+                    <li>Self Learning</li>
+                    <li>Self Assessment</li>
+                    <li>Athletic Performance</li>
+                    <li>Leadership</li>
+                    <li>Public Speaking</li>
+                    <li>Self-confidence</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="work-experience-box">
+            <button class="toggle-button" onclick="toggleSection('openWorkExperience')">Work Experience</button>
+            <div id="openWorkExperience" style="display:none;">
+                <ul>
+                    <li>No work experience</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer class="copyright">
+            &#169; Copyright By Uyoon Alam
+        </footer>
+
+        <div class="links">
+            <a class="fb-share-button" href="https://www.facebook.com/uyoon.alam.7/" target="_blank">
+                <i class="fab fa-facebook"></i> 
+            </a>
+            <a class="github-share-button" href="https://github.com/Uyoonalam" target="_blank">
+                <i class="fab fa-github"></i> 
+            </a>
+            <a class="linkedin-share-button" href="https://www.linkedin.com/in/uyoon-alam-9688591b7/" target="_blank">
+                <i class="fab fa-linkedin"></i> 
+            </a>
+        </div>
+    </div>
+    
+    <script>
+        function toggleSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+        section.style.display = section.style.display === "none" ? "block" : "none";
+    }
+    else {
+        console.error("Element with id '".concat(sectionId, "' not found."));
+    }
+}
+    </script>
+</body>
+</html>
